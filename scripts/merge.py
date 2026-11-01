@@ -12,6 +12,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from dns import build_dns
+
 ROOT = Path(__file__).resolve().parents[1]
 SUPPORTED = {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'IP-CIDR', 'IP-CIDR6', 'IP-ASN'}
 
@@ -32,7 +34,7 @@ def fetch(url):
             time.sleep(attempt + 1)
 
 
-def parse(text, source_id):
+def parse(text, source_id, dns_exclusion=False):
     rows, comments = [], []
     for raw in text.splitlines():
         row = raw.strip()
@@ -42,7 +44,8 @@ def parse(text, source_id):
             comments.append(row)
             continue
         fields = [part.strip() for part in row.split(',')]
-        if len(fields) < 2 or fields[0] not in SUPPORTED or not fields[1]:
+        allowed = SUPPORTED | ({'USER-AGENT'} if dns_exclusion else set())
+        if len(fields) < 2 or fields[0] not in allowed or not fields[1]:
             raise ValueError('Unsupported rule in ' + source_id + '; previous publication must be retained')
         kind, value = fields[:2]
         if kind in ('DOMAIN', 'DOMAIN-SUFFIX') and not re.fullmatch(r'[a-zA-Z0-9_.-]+', value):
@@ -60,14 +63,19 @@ def parse(text, source_id):
 
 
 def main():
-    bundles = json.loads((ROOT / 'sources.json').read_text())['bundles']
+    settings = json.loads((ROOT / 'sources.json').read_text())
+    bundles = settings['bundles']
     entries = {source['id']: source for bundle in bundles for source in bundle['sources']}
     if sum(len(bundle['sources']) for bundle in bundles) != len(entries):
         raise ValueError('Each upstream ID must be unique')
+    exclusions = {source['id']: source for source in settings['dns_exclusions']}
+    if set(entries) & set(exclusions):
+        raise ValueError('Duplicate DNS exclusion ID')
+    entries.update(exclusions)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         futures = {key: executor.submit(fetch, source['url']) for key, source in entries.items()}
         texts = {key: future.result() for key, future in futures.items()}
-    parsed = {key: parse(text, key) for key, text in texts.items()}
+    parsed = {key: parse(text, key, key in exclusions) for key, text in texts.items()}
     files, manifests = {}, {}
     for bundle in bundles:
         seen, lines, records = set(), [], []
@@ -89,6 +97,10 @@ def main():
                                      'filtered_rules': 0, 'sources': records}
     files.update({'upstream/' + key + '.list': text for key, text in texts.items()})
     files['rules/manifest.json'] = json.dumps(manifests, ensure_ascii=False, indent=2) + '\n'
+    previous = ROOT / 'dns/manifest.json'
+    files.update(build_dns({b['name']: files['rules/' + b['name'] + '.list'] for b in bundles},
+                           {key: texts[key] for key in exclusions},
+                           json.loads(previous.read_text()) if previous.exists() else None))
     # Validate every source before writing anything. Git publishes all outputs
     # in a single commit only after this command succeeds.
     for filename, content in files.items():

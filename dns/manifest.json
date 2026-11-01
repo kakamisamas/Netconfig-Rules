@@ -1,0 +1,36 @@
+{
+  "domestic_source": "rules/Domestic.list",
+  "domestic_source_rules": 110186,
+  "domestic_dns_rules": 110132,
+  "domestic_dns_host_mappings": 219677,
+  "claude_dns_host_mappings": 79,
+  "foreign_overlap_rules": 54,
+  "query_routes": {
+    "domestic": "DIRECT",
+    "ordinary": "client-selected",
+    "claude": "client-residential"
+  },
+  "source_sha256": {
+    "Claude": "7fe3313ead8e35d305c41d85225d05b8937a4155fbeb1d853a5847a4d72a7cf1",
+    "Gemini": "607ada40ce04818a349b8f4b85e0642e2361f120b5a07d60d92b31b29cb95b7a",
+    "Grok": "dfb9ead24e8ff5a4a1f3283879c261e37d2146192e085676b8fa075dff8a6c93",
+    "OpenAI": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",
+    "Other-AI": "e9d8423eca58af4f2e2d02f87df55d84b1bc0dbf6e13460b92179e5b5e2f03ca",
+    "Steam": "1f32c8e33f957ccdf27f7806e2d7ca6433880c95a99fa7b0aa6955bd0f5f3e4f",
+    "Domestic": "5a3defa6fd98201132f6fc00e91b60489707c02a9c4cc0e9d4d5081b3ba2a456",
+    "DNS-YouTube": "aba3aab10f9acdaa9c3120b808acd94674fa89e31079aeb299438a4ad690158b",
+    "DNS-Netflix": "ecf67cdae0468902b9b72f028d22b3bbe2c5e12607c855d2c108c6f7d497113a",
+    "DNS-Disney": "65ededc7b608e440f3d918f6e95b19ca52460c8fe368dbd9e840b4bc8669f753",
+    "DNS-Spotify": "577afc9442a38c578e0aa8769b192d2f935e808114c60cbd5afd2294c79b74d0",
+    "DNS-Telegram": "f4b423def4d7e47e99f668e76594ec670b552888b9e1ad23a7adbc65e7400887",
+    "DNS-TikTok": "94262918311e66c8a3bcf5a65173ff0c4e1ceaa29e24644acafadc127121a295",
+    "DNS-Speedtest": "d0f9a3b0befdfd209bf752b86e561094f7bb7e81d96e1df86c2ba585535ba755",
+    "DNS-HBO": "f89c50e9a1f433dc1acb8a75aa2cab27d4e2fd82f4fed6ba2820ce9b923680e2",
+    "DNS-PrimeVideo": "4f957e0888cc89f61b3f04402282f50a5cf11d4bde7240d2b330bc9e1ba6ca46",
+    "DNS-Bahamut": "5c6618ac00734921dae209bb812c1b61cc88523e158b856548153d1d3d8df2fd"
+  },
+  "output_sha256": {
+    "dns/Netconfig-DNS.lpx": "9c2a0ba9d3d797f5b23da9b2a870ba2af2e8522505be7c410df3d4b5c2e3319a",
+    "rules/DNS-Proxy.list": "167cd5fd3da4e13c46b0399649b66cada4b8958104a4452d277f52b6450a8998"
+  }
+}

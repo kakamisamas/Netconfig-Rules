@@ -162,5 +162,24 @@
         "snapshot": "upstream/SteamCN.list"
       }
     ]
+  },
+  "Domestic": {
+    "rules": 110186,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-SUFFIX"
+    ],
+    "sha256": "5a3defa6fd98201132f6fc00e91b60489707c02a9c4cc0e9d4d5081b3ba2a456",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "Domestic-Loyalsoldier",
+        "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
+        "rules": 110186,
+        "new_unique_rules": 110186,
+        "sha256": "d6d74f450689314c62c29ae64089daed84ad9dbe4fadf9d810f57125f6f5cc91",
+        "snapshot": "upstream/Domestic-Loyalsoldier.list"
+      }
+    ]
   }
 }
