@@ -1,0 +1,28 @@
+# Netconfig-Rules: Grok
+# Exact union of complete upstream lists; unique rules: 10
+# Domain, keyword, CIDR, IPv6 and ASN conditions are retained.
+
+# Upstream: https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Grok.list
+# Upstream comments retained below:
+# NAME: Grok
+# AUTHOR: Hexon
+# REPO: https://github.com/HexTTX/Hex-Clash
+# UPDATED: 2026-10-01
+# DOMAIN: 3
+# DOMAIN-SUFFIX: 7
+# TOTAL: 10
+# 核心域名
+# 域名后缀
+DOMAIN,api.x.ai
+DOMAIN,console.x.ai
+DOMAIN,grok.x.com
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grok.app
+DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,docs.x.ai
+DOMAIN-SUFFIX,docs.grok.com
+
+# Upstream: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.list
+# Upstream comments retained below:

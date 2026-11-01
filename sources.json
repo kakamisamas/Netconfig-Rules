@@ -1,0 +1,78 @@
+{
+  "bundles": [
+    {
+      "name": "Claude",
+      "sources": [
+        {
+          "id": "AI-Claude",
+          "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Claude.list"
+        },
+        {
+          "id": "AI-Claude-Core",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.list"
+        }
+      ]
+    },
+    {
+      "name": "Gemini",
+      "sources": [
+        {
+          "id": "AI-Gemini",
+          "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Gemini.list"
+        },
+        {
+          "id": "AI-Gemini-Core",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/google-gemini.list"
+        }
+      ]
+    },
+    {
+      "name": "Grok",
+      "sources": [
+        {
+          "id": "AI-Grok",
+          "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Grok.list"
+        },
+        {
+          "id": "AI-Grok-Core",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.list"
+        }
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "sources": [
+        {
+          "id": "AI-OpenAI",
+          "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/OpenAI.list"
+        }
+      ]
+    },
+    {
+      "name": "Other-AI",
+      "sources": [
+        {
+          "id": "AI-Other-AI",
+          "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/loon/ai.list"
+        }
+      ]
+    },
+    {
+      "name": "Steam",
+      "sources": [
+        {
+          "id": "Steam",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Steam/Steam.list"
+        },
+        {
+          "id": "Steam-Core",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/steam.list"
+        },
+        {
+          "id": "SteamCN",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/SteamCN/SteamCN.list"
+        }
+      ]
+    }
+  ]
+}

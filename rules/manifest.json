@@ -1,0 +1,166 @@
+{
+  "Claude": {
+    "rules": 50,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-KEYWORD",
+      "DOMAIN-SUFFIX",
+      "IP-ASN",
+      "IP-CIDR",
+      "IP-CIDR6"
+    ],
+    "sha256": "7fe3313ead8e35d305c41d85225d05b8937a4155fbeb1d853a5847a4d72a7cf1",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "AI-Claude",
+        "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Claude.list",
+        "rules": 44,
+        "new_unique_rules": 44,
+        "sha256": "e7519d424896bfde376aa4f880d1934eef3c2ff9b032ad22a0bfd64feeaa5690",
+        "snapshot": "upstream/AI-Claude.list"
+      },
+      {
+        "id": "AI-Claude-Core",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.list",
+        "rules": 19,
+        "new_unique_rules": 6,
+        "sha256": "9abc4c8ef9ade13f24d72f9adc8f6164db3278e44cb05e01ec9ae573d55733db",
+        "snapshot": "upstream/AI-Claude-Core.list"
+      }
+    ]
+  },
+  "Gemini": {
+    "rules": 64,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-KEYWORD",
+      "DOMAIN-SUFFIX"
+    ],
+    "sha256": "607ada40ce04818a349b8f4b85e0642e2361f120b5a07d60d92b31b29cb95b7a",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "AI-Gemini",
+        "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Gemini.list",
+        "rules": 58,
+        "new_unique_rules": 58,
+        "sha256": "a8205194a5fc8a2e5f52c8b4ab51d1aaa0d896432975be4dcdb7cbb5e7aa1506",
+        "snapshot": "upstream/AI-Gemini.list"
+      },
+      {
+        "id": "AI-Gemini-Core",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/google-gemini.list",
+        "rules": 49,
+        "new_unique_rules": 6,
+        "sha256": "7c9d8117d520f8e3dca5e7d4706a960d55a891b34e2b5daf4dcc625815a967e4",
+        "snapshot": "upstream/AI-Gemini-Core.list"
+      }
+    ]
+  },
+  "Grok": {
+    "rules": 10,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-SUFFIX"
+    ],
+    "sha256": "dfb9ead24e8ff5a4a1f3283879c261e37d2146192e085676b8fa075dff8a6c93",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "AI-Grok",
+        "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Grok.list",
+        "rules": 10,
+        "new_unique_rules": 10,
+        "sha256": "bb70e3a3d9b4c50c9d59a296a803e576bd09efae53ee8593009732395db30c8b",
+        "snapshot": "upstream/AI-Grok.list"
+      },
+      {
+        "id": "AI-Grok-Core",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.list",
+        "rules": 4,
+        "new_unique_rules": 0,
+        "sha256": "47bb355be9b4b04520394af5c5e8a6d9882709438b03c72e1d9cf4e9f17e5760",
+        "snapshot": "upstream/AI-Grok-Core.list"
+      }
+    ]
+  },
+  "OpenAI": {
+    "rules": 54,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-KEYWORD",
+      "DOMAIN-SUFFIX",
+      "IP-ASN"
+    ],
+    "sha256": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "AI-OpenAI",
+        "url": "https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/OpenAI.list",
+        "rules": 54,
+        "new_unique_rules": 54,
+        "sha256": "9eda2fce15796def4cdd4d31414c53c83d456927f66553412e0fc4ee9943a292",
+        "snapshot": "upstream/AI-OpenAI.list"
+      }
+    ]
+  },
+  "Other-AI": {
+    "rules": 250,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-KEYWORD",
+      "DOMAIN-SUFFIX"
+    ],
+    "sha256": "e9d8423eca58af4f2e2d02f87df55d84b1bc0dbf6e13460b92179e5b5e2f03ca",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "AI-Other-AI",
+        "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/loon/ai.list",
+        "rules": 250,
+        "new_unique_rules": 250,
+        "sha256": "fdf9899f4e0010551c3026a6607dfa969983b945fe1206c32b9a0e0f0360fe46",
+        "snapshot": "upstream/AI-Other-AI.list"
+      }
+    ]
+  },
+  "Steam": {
+    "rules": 109,
+    "types": [
+      "DOMAIN",
+      "DOMAIN-KEYWORD",
+      "DOMAIN-SUFFIX",
+      "IP-CIDR"
+    ],
+    "sha256": "1f32c8e33f957ccdf27f7806e2d7ca6433880c95a99fa7b0aa6955bd0f5f3e4f",
+    "filtered_rules": 0,
+    "sources": [
+      {
+        "id": "Steam",
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Steam/Steam.list",
+        "rules": 69,
+        "new_unique_rules": 69,
+        "sha256": "290ebccc4be56defc7d36f85d8c9777101548a4f2147ca29fe50b794c6a8dec7",
+        "snapshot": "upstream/Steam.list"
+      },
+      {
+        "id": "Steam-Core",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/steam.list",
+        "rules": 61,
+        "new_unique_rules": 28,
+        "sha256": "d1e5e1981ea00317b7f691da269cf53cd1110aeda34d43cb3acd7da521e2ad23",
+        "snapshot": "upstream/Steam-Core.list"
+      },
+      {
+        "id": "SteamCN",
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/SteamCN/SteamCN.list",
+        "rules": 17,
+        "new_unique_rules": 12,
+        "sha256": "82c144434e9199c524d95caa8e3659c9f6f1de9fd23b223a58b5d3c821923936",
+        "snapshot": "upstream/SteamCN.list"
+      }
+    ]
+  }
+}
