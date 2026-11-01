@@ -43,12 +43,14 @@ GitHub Actions 按每六小时的计划及手动触发拉取全部上游，先�
 
 ## 同源 DNS 分流
 
-`dns/Netconfig-DNS.lpx` 是只有 `[Host]` 的 Loon 插件：国内名单的域名使用腾讯 `https://doh.pub/dns-query`；Claude 完整规则中的域名和关键词使用 Cloudflare `https://1.1.1.1/dns-query`。其他域名沿用主配置 DNS。插件不包含节点、出口策略、脚本、MITM 或个人例外。
+`dns/Netconfig-DNS.lpx` 是只有 `[Host]` 的 Loon 插件：国内名单的域名使用腾讯 `https://doh.pub/dns-query`；Claude 完整规则中的域名和关键词使用 Cloudflare `https://1.1.1.1/dns-query`。明确的其他代理域名使用 Cloudflare `https://1.0.0.1/dns-query`，其余域名沿用主配置 DNS。插件不包含节点、出口策略、脚本、MITM 或个人例外。
 
 主配置负责将腾讯 DoH 指向 DIRECT、1.1.1.1 指向个人家宽、默认 Cloudflare 1.0.0.1 指向普通 DNS 代理组；Loon 的加密 DNS 遵循规则、系统 DNS 与查询回落开关仍需在设备设置中确认。不能仅凭插件断言整机没有 DNS 绕行。
 
-Windows/Mihomo 可以让 `rules` 与 `nameserver-policy` 引用同一个 Domestic rule-provider。DNS 策略按 Claude → DNS-Proxy → Domestic 的顺序匹配，默认使用普通境外 DoH。`rules/DNS-Proxy.list` 是从同一批公开规则生成的国内名单重叠例外，避免将较高优先级代理专项的查询交给国内 DNS。共享父域保守使用境外 DNS；不改变 Domestic 原始业务名单。IP、ASN、USER-AGENT 不假装是可映射的 DNS 域名条件。
+Windows/Mihomo 可以让 `rules` 与 `nameserver-policy` 引用同一个 Domestic rule-provider。DNS 策略按 Claude → DNS-Proxy → Domestic 的顺序匹配，默认使用普通境外 DoH。`rules/DNS-Proxy.list` 只包含同一批公开规则明确声明的代理域名条件，不把子域例外扩大到父域，更不能扩大到 `.cn`。Loon 先生成 Claude 和精确的境外 DNS 例外，再保留国内父域映射；相同键只保留较高优先级的服务器。Domestic 原始业务名单不变。IP、ASN、USER-AGENT 不假装是可映射的 DNS 域名条件。
 
 DNS 和业务规则在同一次构建中读取同一份上游快照，一次提交发布。每六小时构建，异常语法、空源、国内名单异常缩减或常用样本回归均使更新失败，保留已发布版本。`dns/manifest.json` 记录输入和输出哈希。客户端仍需成功更新资源；不同文件下载不是原子操作，不保证两次下载之间绝无短暂版本差异。远程插件仍会加载完整映射，不能宣称节省设备内存。
 
 国内上游为 GPL-3.0，许可原文见 `licenses/Loyalsoldier-surge-rules.txt`；DNS 排除来源见 `sources.json` 的 `dns_exclusions`，保留其原始快照与上游版权注释。测试仅使用静态规则，不查询或访问 AI 服务。
+
+2026-11-01 回归保护：保留 `.cn` 国内兜底、微信图片/头像、精确域名不扩大到子域、Claude 映射优先级；代理顶级后缀覆盖国内域名时中止发布。原理参考 [ccc592/loon-dns-rules](https://github.com/ccc592/loon-dns-rules) 的精确例外与失败保留旧版本做法。
