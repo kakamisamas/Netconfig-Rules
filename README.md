@@ -8,7 +8,7 @@
 
 | 文件 | 完整上游来源 |
 | --- | --- |
-| Claude.list | Hex Claude + MetaCubeX anthropic |
+| Claude.list | Hex Claude + MetaCubeX anthropic + 官方 IP 补充 |
 | Gemini.list | Hex Gemini + MetaCubeX google-gemini |
 | Grok.list | Hex Grok + MetaCubeX xai |
 | OpenAI.list | Hex OpenAI |
@@ -25,6 +25,8 @@ GitHub Actions 按每六小时的计划及手动触发拉取全部上游，先�
 仅移除完全重复的规则行，不裁掉关键词、IPv4、IPv6、ASN 或其他已支持的匹配条件。保留上游注释；原始响应保存在 `upstream/`，来源、原始条数、加入条数、类型和哈希保存在 `rules/manifest.json`。遇到新语法、空文件或下载失败时整个更新失败，保留已发布版本，不上传不完整结果。
 
 不同服务之间的顺序和冲突由使用者的主配置决定。完整保留选定上游，不代表覆盖每个未来端点；不通过访问 AI 服务检测规则。Other-AI 的来源保持原选定文件，不在此次聚合中扩大服务范围。
+
+`supplements/Claude.list` 按 [Claude 官方 IP 文档](https://platform.claude.com/docs/en/api/ip-addresses) 补充上游尚未覆盖的 `153.61.224.0/22` 与 `153.61.208.0/20`，作为声明的公开来源参与每次合并，不会被定时更新覆盖。官方的出站网段是 Anthropic 主动访问外部服务时的源地址；这里按用户要求同时纳入目的地址匹配。已有 `160.79.104.0/21` 和 `platform.claude.com` 继续由原上游覆盖。
 
 ## Steam 的边界
 

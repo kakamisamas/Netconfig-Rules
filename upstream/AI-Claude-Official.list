@@ -1,0 +1,8 @@
+# Claude official IP supplement
+# Source: https://platform.claude.com/docs/en/api/ip-addresses
+# Verified: 2026-11-06
+# Inbound: Anthropic receives connections on this range.
+IP-CIDR,153.61.224.0/22,no-resolve
+# Outbound: Anthropic initiates external requests from this range.
+# Included as a destination rule at the user's request.
+IP-CIDR,153.61.208.0/20,no-resolve

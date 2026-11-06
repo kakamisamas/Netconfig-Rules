@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - sources.json
+      - supplements/**
       - scripts/**
       - tests/**
       - .github/workflows/update-rules.yml

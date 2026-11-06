@@ -13,7 +13,7 @@
     "claude": "client-residential"
   },
   "source_sha256": {
-    "Claude": "7fe3313ead8e35d305c41d85225d05b8937a4155fbeb1d853a5847a4d72a7cf1",
+    "Claude": "e86cd80e1ed2da8467bfd1eaaafcb0b052d45d7e62c7da3a075c2f0ba589fcaf",
     "Gemini": "607ada40ce04818a349b8f4b85e0642e2361f120b5a07d60d92b31b29cb95b7a",
     "Grok": "dfb9ead24e8ff5a4a1f3283879c261e37d2146192e085676b8fa075dff8a6c93",
     "OpenAI": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",

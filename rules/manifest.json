@@ -1,6 +1,6 @@
 {
   "Claude": {
-    "rules": 50,
+    "rules": 52,
     "types": [
       "DOMAIN",
       "DOMAIN-KEYWORD",
@@ -9,7 +9,7 @@
       "IP-CIDR",
       "IP-CIDR6"
     ],
-    "sha256": "7fe3313ead8e35d305c41d85225d05b8937a4155fbeb1d853a5847a4d72a7cf1",
+    "sha256": "e86cd80e1ed2da8467bfd1eaaafcb0b052d45d7e62c7da3a075c2f0ba589fcaf",
     "filtered_rules": 0,
     "sources": [
       {
@@ -27,6 +27,14 @@
         "new_unique_rules": 6,
         "sha256": "9abc4c8ef9ade13f24d72f9adc8f6164db3278e44cb05e01ec9ae573d55733db",
         "snapshot": "upstream/AI-Claude-Core.list"
+      },
+      {
+        "id": "AI-Claude-Official",
+        "url": "https://raw.githubusercontent.com/kakamisamas/Netconfig-Rules/main/supplements/Claude.list",
+        "rules": 2,
+        "new_unique_rules": 2,
+        "sha256": "3043a8604bd43d5d44ec83e5c7ce9551116009ab6917569b4497e589d80fb960",
+        "snapshot": "upstream/AI-Claude-Official.list"
       }
     ]
   },

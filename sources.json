@@ -10,6 +10,10 @@
         {
           "id": "AI-Claude-Core",
           "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.list"
+        },
+        {
+          "id": "AI-Claude-Official",
+          "url": "https://raw.githubusercontent.com/kakamisamas/Netconfig-Rules/main/supplements/Claude.list"
         }
       ]
     },
