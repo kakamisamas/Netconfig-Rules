@@ -1,0 +1,5 @@
+# Ellie service endpoints verified for direct access on the owner's network.
+# Set the client's policy and DNS separately; shared Google services are excluded.
+DOMAIN,app.ellieplanner.com
+DOMAIN,gryffin.ellieplanner.com
+DOMAIN,valhalla.ellieplanner.com

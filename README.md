@@ -15,6 +15,7 @@
 | Other-AI.list | QuixoticHeart 原生 Loon AI 汇总 |
 | Steam.list | blackmatrix7 Steam + MetaCubeX Steam + blackmatrix7 SteamCN |
 | Domestic.list | Loyalsoldier/surge-rules 的完整 ruleset/direct.txt |
+| Ellie.list | 手工维护的 Ellie 精确域名，不包含共享 Google 服务 |
 
 Loon 将地址写入 `[Remote Rule]`，映射到自己的策略；Mihomo 使用 HTTP rule-provider，`behavior: classical`、`format: text`。规则文件不包含出口策略，不提供节点。
 
@@ -27,6 +28,8 @@ GitHub Actions 按每六小时的计划及手动触发拉取全部上游，先�
 不同服务之间的顺序和冲突由使用者的主配置决定。完整保留选定上游，不代表覆盖每个未来端点；不通过访问 AI 服务检测规则。Other-AI 的来源保持原选定文件，不在此次聚合中扩大服务范围。
 
 `supplements/Claude.list` 按 [Claude 官方 IP 文档](https://platform.claude.com/docs/en/api/ip-addresses) 补充上游尚未覆盖的 `153.61.224.0/22` 与 `153.61.208.0/20`，作为声明的公开来源参与每次合并，不会被定时更新覆盖。官方的出站网段是 Anthropic 主动访问外部服务时的源地址；这里按用户要求同时纳入目的地址匹配。已有 `160.79.104.0/21` 和 `platform.claude.com` 继续由原上游覆盖。
+
+`rules/Ellie.list` 是手工维护的独立服务清单，不由上游合并任务生成，也不自动改变客户端出口或 DNS。三个域名在维护者当前网络测试过直连，其他网络的可用性可能不同；Google 登录、云函数等共享服务未纳入。个人主配置中的本地规则独立维护，客户端更新清单不会自动改写本地规则或 DNS。
 
 ## Steam 的边界
 
