@@ -1,6 +1,6 @@
 {
   "Claude": {
-    "rules": 52,
+    "rules": 54,
     "types": [
       "DOMAIN",
       "DOMAIN-KEYWORD",
@@ -9,7 +9,7 @@
       "IP-CIDR",
       "IP-CIDR6"
     ],
-    "sha256": "e86cd80e1ed2da8467bfd1eaaafcb0b052d45d7e62c7da3a075c2f0ba589fcaf",
+    "sha256": "57b3007d303aa165812a3ec5ed28dc20f1d3df420a25c1092b224f40717a4407",
     "filtered_rules": 0,
     "sources": [
       {
@@ -23,9 +23,9 @@
       {
         "id": "AI-Claude-Core",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.list",
-        "rules": 19,
-        "new_unique_rules": 6,
-        "sha256": "9abc4c8ef9ade13f24d72f9adc8f6164db3278e44cb05e01ec9ae573d55733db",
+        "rules": 21,
+        "new_unique_rules": 8,
+        "sha256": "3ca6cf7858c12a273c149326cc90086e20c5121188b112fb7c55f3d4f6911cd2",
         "snapshot": "upstream/AI-Claude-Core.list"
       },
       {
@@ -67,12 +67,12 @@
     ]
   },
   "Grok": {
-    "rules": 10,
+    "rules": 11,
     "types": [
       "DOMAIN",
       "DOMAIN-SUFFIX"
     ],
-    "sha256": "dfb9ead24e8ff5a4a1f3283879c261e37d2146192e085676b8fa075dff8a6c93",
+    "sha256": "ad5bc6e4666ce74a1ef0078508ee90d95145a124d6cc340b1b958957793dd368",
     "filtered_rules": 0,
     "sources": [
       {
@@ -86,9 +86,9 @@
       {
         "id": "AI-Grok-Core",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.list",
-        "rules": 4,
-        "new_unique_rules": 0,
-        "sha256": "47bb355be9b4b04520394af5c5e8a6d9882709438b03c72e1d9cf4e9f17e5760",
+        "rules": 5,
+        "new_unique_rules": 1,
+        "sha256": "57efbb43c4eeedb41fa54182aea6b90907cdcde312b75e657593d6b38d3ded1f",
         "snapshot": "upstream/AI-Grok-Core.list"
       }
     ]
@@ -115,21 +115,21 @@
     ]
   },
   "Other-AI": {
-    "rules": 250,
+    "rules": 254,
     "types": [
       "DOMAIN",
       "DOMAIN-KEYWORD",
       "DOMAIN-SUFFIX"
     ],
-    "sha256": "e9d8423eca58af4f2e2d02f87df55d84b1bc0dbf6e13460b92179e5b5e2f03ca",
+    "sha256": "1a2a9c36738d35419be4cccf66dc510bd6e2602b2fcb18b2a4c6ecf23917f5a7",
     "filtered_rules": 0,
     "sources": [
       {
         "id": "AI-Other-AI",
         "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/loon/ai.list",
-        "rules": 250,
-        "new_unique_rules": 250,
-        "sha256": "fdf9899f4e0010551c3026a6607dfa969983b945fe1206c32b9a0e0f0360fe46",
+        "rules": 254,
+        "new_unique_rules": 254,
+        "sha256": "ac93b315f9f23cb57696cc6798ca1ee005ef75b068c6404d17216bb4bb11029b",
         "snapshot": "upstream/AI-Other-AI.list"
       }
     ]

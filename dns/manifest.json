@@ -3,9 +3,9 @@
   "domestic_source_rules": 110188,
   "domestic_dns_rules": 110145,
   "domestic_dns_host_mappings": 219702,
-  "claude_dns_host_mappings": 79,
-  "foreign_overlap_rules": 961,
-  "foreign_dns_host_mappings": 1652,
+  "claude_dns_host_mappings": 81,
+  "foreign_overlap_rules": 965,
+  "foreign_dns_host_mappings": 1655,
   "derivation_version": 2,
   "query_routes": {
     "domestic": "DIRECT",
@@ -13,11 +13,11 @@
     "claude": "client-residential"
   },
   "source_sha256": {
-    "Claude": "e86cd80e1ed2da8467bfd1eaaafcb0b052d45d7e62c7da3a075c2f0ba589fcaf",
+    "Claude": "57b3007d303aa165812a3ec5ed28dc20f1d3df420a25c1092b224f40717a4407",
     "Gemini": "607ada40ce04818a349b8f4b85e0642e2361f120b5a07d60d92b31b29cb95b7a",
-    "Grok": "dfb9ead24e8ff5a4a1f3283879c261e37d2146192e085676b8fa075dff8a6c93",
+    "Grok": "ad5bc6e4666ce74a1ef0078508ee90d95145a124d6cc340b1b958957793dd368",
     "OpenAI": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",
-    "Other-AI": "e9d8423eca58af4f2e2d02f87df55d84b1bc0dbf6e13460b92179e5b5e2f03ca",
+    "Other-AI": "1a2a9c36738d35419be4cccf66dc510bd6e2602b2fcb18b2a4c6ecf23917f5a7",
     "Steam": "1f32c8e33f957ccdf27f7806e2d7ca6433880c95a99fa7b0aa6955bd0f5f3e4f",
     "Domestic": "3963c0995fb2d7bf7c7fa8e9bd101eb46d58f6556f1641caae9e93ef98dc1545",
     "DNS-YouTube": "aba3aab10f9acdaa9c3120b808acd94674fa89e31079aeb299438a4ad690158b",
@@ -32,7 +32,7 @@
     "DNS-Bahamut": "5c6618ac00734921dae209bb812c1b61cc88523e158b856548153d1d3d8df2fd"
   },
   "output_sha256": {
-    "dns/Netconfig-DNS.lpx": "76d04868ea63811f769f7bc26a1a1d0319c135df36d2244c064eecaf35f2c0d2",
-    "rules/DNS-Proxy.list": "6ae164448f9215aac27493525d07b43871b7ea96a34d163d47026e5beb7830c0"
+    "dns/Netconfig-DNS.lpx": "ac3459967d43ff166a07ca06a49bdae628b8a06e37e3eef8d8d9b42400b47eb8",
+    "rules/DNS-Proxy.list": "5ae25d0e6a5908ecf7a2e7f4b110a7782fbb5e92c7900d999b054b9759c6f6a2"
   }
 }

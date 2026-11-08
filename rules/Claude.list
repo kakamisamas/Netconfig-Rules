@@ -1,5 +1,5 @@
 # Netconfig-Rules: Claude
-# Exact union of complete upstream lists; unique rules: 52
+# Exact union of complete upstream lists; unique rules: 54
 # Domain, keyword, CIDR, IPv6 and ASN conditions are retained.
 
 # Upstream: https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Claude.list
@@ -72,6 +72,8 @@ DOMAIN-SUFFIX,antspace.dev
 DOMAIN-SUFFIX,chatbotclaude.com
 DOMAIN-SUFFIX,claudeacademy.com
 DOMAIN-SUFFIX,claudepages.dev
+DOMAIN,http-intake.logs.us5.datadoghq.com
+DOMAIN,o1158394.ingest.us.sentry.io
 
 # Upstream: https://raw.githubusercontent.com/kakamisamas/Netconfig-Rules/main/supplements/Claude.list
 # Upstream comments retained below:

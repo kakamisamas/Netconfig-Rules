@@ -1,5 +1,5 @@
 # Netconfig-Rules: Grok
-# Exact union of complete upstream lists; unique rules: 10
+# Exact union of complete upstream lists; unique rules: 11
 # Domain, keyword, CIDR, IPv6 and ASN conditions are retained.
 
 # Upstream: https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Grok.list
@@ -26,3 +26,4 @@ DOMAIN-SUFFIX,docs.grok.com
 
 # Upstream: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.list
 # Upstream comments retained below:
+DOMAIN-SUFFIX,grokbot.com

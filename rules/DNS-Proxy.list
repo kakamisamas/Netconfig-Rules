@@ -68,6 +68,7 @@ DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,h-netflix.online-metrix.net
 DOMAIN,heads-ak-spotify-com.akamaized.net
+DOMAIN,http-intake.logs.us5.datadoghq.com
 DOMAIN,imagine.meta.com
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
@@ -77,6 +78,7 @@ DOMAIN,makersuite.google.com
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN,notebooklm-pa.googleapis.com
 DOMAIN,notebooklm.googleapis.com
+DOMAIN,o1158394.ingest.us.sentry.io
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,o33249.ingest.us.sentry.io
 DOMAIN,ogads-pa.clients6.google.com
@@ -94,6 +96,7 @@ DOMAIN,platform.claude.com
 DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN,preview.claude.ai
+DOMAIN,production-copilot-host-westus.webpubsub.azure.com
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,s.gravatar.com
 DOMAIN,servd-anthropic-website.b-cdn.net
@@ -457,6 +460,7 @@ DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,grok.app
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,grokbot.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,gstore.val.manlaxy.com
