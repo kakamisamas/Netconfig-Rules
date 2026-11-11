@@ -172,20 +172,20 @@
     ]
   },
   "Domestic": {
-    "rules": 110188,
+    "rules": 110189,
     "types": [
       "DOMAIN",
       "DOMAIN-SUFFIX"
     ],
-    "sha256": "3963c0995fb2d7bf7c7fa8e9bd101eb46d58f6556f1641caae9e93ef98dc1545",
+    "sha256": "c76d2b3fe94f00c3b3f9eeebeea764091351d697eb57fa4c9a7766bde44a132d",
     "filtered_rules": 0,
     "sources": [
       {
         "id": "Domestic-Loyalsoldier",
         "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
-        "rules": 110188,
-        "new_unique_rules": 110188,
-        "sha256": "de463bc93c2c47c0bad1f75afbecbfea04a31b342a4acca31172b3045c9ec62b",
+        "rules": 110189,
+        "new_unique_rules": 110189,
+        "sha256": "2933b553fe3929960f62fccd18193cb8f8438fd2c7ab4f040f68ba26d6e554d7",
         "snapshot": "upstream/Domestic-Loyalsoldier.list"
       }
     ]
