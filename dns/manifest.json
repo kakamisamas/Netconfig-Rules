@@ -1,8 +1,8 @@
 {
   "domestic_source": "rules/Domestic.list",
-  "domestic_source_rules": 110288,
-  "domestic_dns_rules": 110244,
-  "domestic_dns_host_mappings": 219900,
+  "domestic_source_rules": 110239,
+  "domestic_dns_rules": 110195,
+  "domestic_dns_host_mappings": 219802,
   "claude_dns_host_mappings": 81,
   "foreign_overlap_rules": 965,
   "foreign_dns_host_mappings": 1655,
@@ -19,7 +19,7 @@
     "OpenAI": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",
     "Other-AI": "1a2a9c36738d35419be4cccf66dc510bd6e2602b2fcb18b2a4c6ecf23917f5a7",
     "Steam": "1f32c8e33f957ccdf27f7806e2d7ca6433880c95a99fa7b0aa6955bd0f5f3e4f",
-    "Domestic": "03bcd8ddb943608ea9be77f5354cbd85edd20b10a0db7dbad70dee04db7e704b",
+    "Domestic": "1ba5a6eec10bb6ae83805372fb1ce4dc3e3aa41b00a5a1190973404cab9eb17f",
     "DNS-YouTube": "aba3aab10f9acdaa9c3120b808acd94674fa89e31079aeb299438a4ad690158b",
     "DNS-Netflix": "ecf67cdae0468902b9b72f028d22b3bbe2c5e12607c855d2c108c6f7d497113a",
     "DNS-Disney": "65ededc7b608e440f3d918f6e95b19ca52460c8fe368dbd9e840b4bc8669f753",
@@ -32,7 +32,7 @@
     "DNS-Bahamut": "5c6618ac00734921dae209bb812c1b61cc88523e158b856548153d1d3d8df2fd"
   },
   "output_sha256": {
-    "dns/Netconfig-DNS.lpx": "9d043408ee80ca3f545886c11c38db85d745c2ce47658f75ba64aa48caaff662",
+    "dns/Netconfig-DNS.lpx": "4383b5d563a97cecaddca593407d884924410c37b1ca051be71d4e8d34d78d6a",
     "rules/DNS-Proxy.list": "5ae25d0e6a5908ecf7a2e7f4b110a7782fbb5e92c7900d999b054b9759c6f6a2"
   }
 }
