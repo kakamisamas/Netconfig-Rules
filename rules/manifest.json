@@ -115,21 +115,21 @@
     ]
   },
   "Other-AI": {
-    "rules": 254,
+    "rules": 255,
     "types": [
       "DOMAIN",
       "DOMAIN-KEYWORD",
       "DOMAIN-SUFFIX"
     ],
-    "sha256": "1a2a9c36738d35419be4cccf66dc510bd6e2602b2fcb18b2a4c6ecf23917f5a7",
+    "sha256": "1e90d92b08ff557b897be3c0d5bbf30da7730a98450c5885a291c8532e52248d",
     "filtered_rules": 0,
     "sources": [
       {
         "id": "AI-Other-AI",
         "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/loon/ai.list",
-        "rules": 254,
-        "new_unique_rules": 254,
-        "sha256": "ac93b315f9f23cb57696cc6798ca1ee005ef75b068c6404d17216bb4bb11029b",
+        "rules": 255,
+        "new_unique_rules": 255,
+        "sha256": "1b246fc030b335e21d68111e432d739202f3ee23b55c1bb0716cac76cb8ee3af",
         "snapshot": "upstream/AI-Other-AI.list"
       }
     ]
@@ -172,20 +172,20 @@
     ]
   },
   "Domestic": {
-    "rules": 110239,
+    "rules": 110243,
     "types": [
       "DOMAIN",
       "DOMAIN-SUFFIX"
     ],
-    "sha256": "1ba5a6eec10bb6ae83805372fb1ce4dc3e3aa41b00a5a1190973404cab9eb17f",
+    "sha256": "7b07408f1d9af425c83c82f47e8917b5ecf9ed0619d9ca61475dd707077c289f",
     "filtered_rules": 0,
     "sources": [
       {
         "id": "Domestic-Loyalsoldier",
         "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
-        "rules": 110239,
-        "new_unique_rules": 110239,
-        "sha256": "59a425c3e33fc4b58f4f0ef7687b682d715e01b4d13481211e7e034ee2d04c8b",
+        "rules": 110243,
+        "new_unique_rules": 110243,
+        "sha256": "d384a4cb3e30c276c25d306802aad50e984fb4c4561bee3b7b1102949d9bd3c7",
         "snapshot": "upstream/Domestic-Loyalsoldier.list"
       }
     ]
