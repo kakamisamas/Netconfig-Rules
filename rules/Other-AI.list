@@ -1,5 +1,5 @@
 # Netconfig-Rules: Other-AI
-# Exact union of complete upstream lists; unique rules: 255
+# Exact union of complete upstream lists; unique rules: 258
 # Domain, keyword, CIDR, IPv6 and ASN conditions are retained.
 
 # Upstream: https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/loon/ai.list
@@ -34,6 +34,7 @@ DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN,geminiweb-pa.clients.google.com
 DOMAIN,geminiweb-pa.clients6.google.com
+DOMAIN,graph.facebook.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,http-intake.logs.us5.datadoghq.com
@@ -140,6 +141,7 @@ DOMAIN-SUFFIX,dreamgen.com
 DOMAIN-SUFFIX,duck.ai
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabsusercontent.com
 DOMAIN-SUFFIX,envato-static.com
 DOMAIN-SUFFIX,envato.com
 DOMAIN-SUFFIX,envatousercontent.com
@@ -259,3 +261,4 @@ DOMAIN-KEYWORD,notebooklm.google
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
+DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net

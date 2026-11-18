@@ -64,6 +64,7 @@ DOMAIN,fls-na.amazon.com
 DOMAIN,fonts.gstatic.com
 DOMAIN,geminiweb-pa.clients.google.com
 DOMAIN,geminiweb-pa.clients6.google.com
+DOMAIN,graph.facebook.com
 DOMAIN,grok.x.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,guzzoni.apple.com
@@ -418,6 +419,7 @@ DOMAIN-SUFFIX,edgecompute.app
 DOMAIN-SUFFIX,edgedatg.com
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabsusercontent.com
 DOMAIN-SUFFIX,envato-static.com
 DOMAIN-SUFFIX,envato.com
 DOMAIN-SUFFIX,envatousercontent.com
@@ -965,3 +967,4 @@ DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,zed.dev
+DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net

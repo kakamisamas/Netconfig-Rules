@@ -4,8 +4,8 @@
   "domestic_dns_rules": 110199,
   "domestic_dns_host_mappings": 219807,
   "claude_dns_host_mappings": 81,
-  "foreign_overlap_rules": 966,
-  "foreign_dns_host_mappings": 1656,
+  "foreign_overlap_rules": 969,
+  "foreign_dns_host_mappings": 1660,
   "derivation_version": 2,
   "query_routes": {
     "domestic": "DIRECT",
@@ -17,7 +17,7 @@
     "Gemini": "607ada40ce04818a349b8f4b85e0642e2361f120b5a07d60d92b31b29cb95b7a",
     "Grok": "ad5bc6e4666ce74a1ef0078508ee90d95145a124d6cc340b1b958957793dd368",
     "OpenAI": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",
-    "Other-AI": "1e90d92b08ff557b897be3c0d5bbf30da7730a98450c5885a291c8532e52248d",
+    "Other-AI": "86e8ca033c24dd3f8a6236db1252879f4a58c730ae88f9af72359ccb3d858900",
     "Steam": "1f32c8e33f957ccdf27f7806e2d7ca6433880c95a99fa7b0aa6955bd0f5f3e4f",
     "Domestic": "7b07408f1d9af425c83c82f47e8917b5ecf9ed0619d9ca61475dd707077c289f",
     "DNS-YouTube": "aba3aab10f9acdaa9c3120b808acd94674fa89e31079aeb299438a4ad690158b",
@@ -32,7 +32,7 @@
     "DNS-Bahamut": "5c6618ac00734921dae209bb812c1b61cc88523e158b856548153d1d3d8df2fd"
   },
   "output_sha256": {
-    "dns/Netconfig-DNS.lpx": "94330e836ac4a0c08c22f855c2a045c2f7b8ff43c0a2b9d23b8e42ca78100ffb",
-    "rules/DNS-Proxy.list": "4655bd5c8e99abc8c979783dbbd64154a407a324eb57bda728ac94b8ddb6eb92"
+    "dns/Netconfig-DNS.lpx": "bab1225fa8786047987b7bfac291921c77ac24e450d7d20000458af8ac1dd6d0",
+    "rules/DNS-Proxy.list": "a89bccecae6274f28daecaabe8ebbe60665cc29039a803060e274217535a1e0c"
   }
 }

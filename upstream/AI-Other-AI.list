@@ -28,6 +28,7 @@ DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN,geminiweb-pa.clients.google.com
 DOMAIN,geminiweb-pa.clients6.google.com
+DOMAIN,graph.facebook.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,http-intake.logs.us5.datadoghq.com
@@ -134,6 +135,7 @@ DOMAIN-SUFFIX,dreamgen.com
 DOMAIN-SUFFIX,duck.ai
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabsusercontent.com
 DOMAIN-SUFFIX,envato-static.com
 DOMAIN-SUFFIX,envato.com
 DOMAIN-SUFFIX,envatousercontent.com
@@ -253,3 +255,4 @@ DOMAIN-KEYWORD,notebooklm.google
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
+DOMAIN-WILDCARD,scontent-*.xx.fbcdn.net

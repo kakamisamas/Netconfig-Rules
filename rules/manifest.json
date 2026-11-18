@@ -115,21 +115,22 @@
     ]
   },
   "Other-AI": {
-    "rules": 255,
+    "rules": 258,
     "types": [
       "DOMAIN",
       "DOMAIN-KEYWORD",
-      "DOMAIN-SUFFIX"
+      "DOMAIN-SUFFIX",
+      "DOMAIN-WILDCARD"
     ],
-    "sha256": "1e90d92b08ff557b897be3c0d5bbf30da7730a98450c5885a291c8532e52248d",
+    "sha256": "86e8ca033c24dd3f8a6236db1252879f4a58c730ae88f9af72359ccb3d858900",
     "filtered_rules": 0,
     "sources": [
       {
         "id": "AI-Other-AI",
         "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/loon/ai.list",
-        "rules": 255,
-        "new_unique_rules": 255,
-        "sha256": "1b246fc030b335e21d68111e432d739202f3ee23b55c1bb0716cac76cb8ee3af",
+        "rules": 258,
+        "new_unique_rules": 258,
+        "sha256": "827edc531bbbf1c0974328c1f7b28946ad4dd846adb8640fa61f11571b7ffb1e",
         "snapshot": "upstream/AI-Other-AI.list"
       }
     ]
