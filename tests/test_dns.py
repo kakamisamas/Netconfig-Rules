@@ -41,6 +41,18 @@ class DNSArtifactsTests(unittest.TestCase):
         self.assertLess(plugin.index('*.ggpht.cn = server:https://1.0.0.1/dns-query'),
                         plugin.index('*.cn = server:https://doh.pub/dns-query'))
 
+    def test_wildcard_preserves_the_declared_scope_in_both_dns_artifacts(self):
+        pattern = 'cdn-*.xx.media.example'
+        row = 'DOMAIN-WILDCARD,' + pattern
+        domestic = self.domestic + '\nDOMAIN,cdn-01.xx.media.example\nDOMAIN-SUFFIX,xx.media.example'
+        files = build_dns({'Domestic': domestic, 'Claude': 'DOMAIN,ai.example', 'Other-AI': row}, {})
+        maps = dict(line.split(' = ', 1) for line in files['dns/Netconfig-DNS.lpx'].splitlines()
+                    if ' = server:' in line)
+        self.assertEqual(maps[pattern], 'server:https://1.0.0.1/dns-query')
+        self.assertEqual(maps['*.xx.media.example'], 'server:https://doh.pub/dns-query')
+        self.assertNotIn('cdn-01.xx.media.example', maps)
+        self.assertIn(row, files['rules/DNS-Proxy.list'].splitlines())
+
     def test_broad_upstream_proxy_rule_aborts_instead_of_replacing_domestic_tld(self):
         with self.assertRaisesRegex(ValueError, 'top-level'):
             build_dns({'Domestic': self.domestic, 'Claude': 'DOMAIN,ai.example',

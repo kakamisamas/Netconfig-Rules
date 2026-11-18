@@ -1,4 +1,5 @@
 """Derive DNS artifacts from the same public rule snapshots as business rules."""
+from fnmatch import fnmatchcase
 import hashlib
 import json
 CLAUDE = 'https://1.1.1.1/dns-query'
@@ -12,7 +13,7 @@ def domain_rows(text):
         if not row or row.startswith(('#', ';')):
             continue
         kind, value, *_ = row.split(',')
-        if kind in {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD'}:
+        if kind in {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'DOMAIN-WILDCARD'}:
             yield kind, value.lower()
 
 
@@ -23,8 +24,10 @@ def host_patterns(rows):
             patterns.add(value)
         elif kind == 'DOMAIN-SUFFIX':
             patterns.update((value, '*.' + value))
-        else:
+        elif kind == 'DOMAIN-KEYWORD':
             patterns.add('*' + value + '*')
+        else:
+            patterns.add(value)
     return patterns
 
 
@@ -36,7 +39,7 @@ def build_dns(bundles, exclusions, previous=None):
     Mihomo uses the same foreign conditions before the Domestic rule-provider.
     """
     domestic = list(domain_rows(bundles['Domestic']))
-    if any(k == 'DOMAIN-KEYWORD' for k, _ in domestic) or len(domestic) < 50_000:
+    if any(k not in {'DOMAIN', 'DOMAIN-SUFFIX'} for k, _ in domestic) or len(domestic) < 50_000:
         raise ValueError('Unexpected Domestic syntax or list size; retain previous publication')
     if previous and len(domestic) < previous['domestic_source_rules'] * 0.9:
         raise ValueError('Domestic source shrank by more than 10%; manual review required')
@@ -51,21 +54,24 @@ def build_dns(bundles, exclusions, previous=None):
            and any(domain == value or domain.endswith('.' + value) for _, domain in domestic)
            for kind, value in protected):
         raise ValueError('Proxy top-level suffix would capture unrelated domestic domains')
-    exact, suffixes, keywords = set(), set(), set()
+    exact, suffixes, keywords, wildcards = set(), set(), set(), set()
     for kind, value in protected:
         if kind == 'DOMAIN':
             exact.add(value)
         elif kind == 'DOMAIN-SUFFIX':
             suffixes.add(value)
-        else:
+        elif kind == 'DOMAIN-KEYWORD':
             keywords.add(value)
+        else:
+            wildcards.add(value)
     # Bootstrap and private DNS remain owned by the client configuration.
     exact.add('doh.pub')
     suffixes.add('ts.net')
     safe = []
     for kind, domain in domestic:
         labels = domain.split('.')
-        conflict = (domain == 'doh.pub' or kind == 'DOMAIN' and domain in exact
+        conflict = (domain == 'doh.pub'
+                    or kind == 'DOMAIN' and (domain in exact or any(fnmatchcase(domain, p) for p in wildcards))
                     or any('.'.join(labels[i:]) in suffixes for i in range(len(labels)))
                     or any(word in domain for word in keywords))
         if not conflict:
@@ -77,7 +83,8 @@ def build_dns(bundles, exclusions, previous=None):
     domestic_patterns, claude_patterns = host_patterns(safe), host_patterns(claude)
     domestic_patterns -= claude_patterns
     for sample in ('bilibili.com', 'hdslb.com', 'qq.com', 'jd.com'):
-        if not any(k == 'DOMAIN-SUFFIX' and (sample == d or sample.endswith('.' + d))
+        if any(fnmatchcase(sample, pattern) for pattern in wildcards) or not any(
+                   k == 'DOMAIN-SUFFIX' and (sample == d or sample.endswith('.' + d))
                    or k == 'DOMAIN' and sample == d for k, d in safe):
             raise ValueError('Domestic regression: ' + sample)
     plugin = ['#!name = Netconfig DNS 分流',
