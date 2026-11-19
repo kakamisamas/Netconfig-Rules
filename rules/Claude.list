@@ -1,5 +1,5 @@
 # Netconfig-Rules: Claude
-# Exact union of complete upstream lists; unique rules: 54
+# Exact union of complete upstream lists; unique rules: 47
 # Domain, keyword, CIDR, IPv6 and ASN conditions are retained.
 
 # Upstream: https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/Claude.list
@@ -7,23 +7,12 @@
 # NAME: Claude
 # AUTHOR: Hexon
 # REPO: https://github.com/HexTTX/Hex-Clash
-# UPDATED: 2026-10-21
+# UPDATED: 2026-11-19
 # DOMAIN: 10
-# DOMAIN-SUFFIX: 26
-# DOMAIN-KEYWORD: 5
-# IP-CIDR: 1
-# IP-CIDR6: 1
-# IP-ASN: 1
-# TOTAL: 44
-# 关键字匹配
+# DOMAIN-SUFFIX: 33
+# TOTAL: 43
 # 核心域名
 # 域名后缀
-# IP 段 / ASN 兜底
-DOMAIN-KEYWORD,claude
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sift
-DOMAIN-KEYWORD,sentry
 DOMAIN,cdn.usefathom.com
 DOMAIN,platform.claude.com
 DOMAIN,preview.claude.ai
@@ -34,11 +23,18 @@ DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,cdn.growthbook.io
+DOMAIN-SUFFIX,ant.dev
+DOMAIN-SUFFIX,anthropic.team
+DOMAIN-SUFFIX,antspace.dev
+DOMAIN-SUFFIX,chatbotclaude.com
+DOMAIN-SUFFIX,claudeacademy.com
+DOMAIN-SUFFIX,claudepages.dev
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.site
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,anthropic.ai
 DOMAIN-SUFFIX,anthropiccdn.com
 DOMAIN-SUFFIX,anthropic-cdn.com
 DOMAIN-SUFFIX,claudeusercontent.com
@@ -60,18 +56,9 @@ DOMAIN-SUFFIX,modelcontextprotocol.org
 DOMAIN-SUFFIX,modelcontextprotocol.net
 DOMAIN-SUFFIX,withpersona.com
 DOMAIN-SUFFIX,claude403.com
-IP-CIDR,160.79.104.0/21,no-resolve
-IP-CIDR6,2607:6bc0::/32,no-resolve
-IP-ASN,399358,no-resolve
 
 # Upstream: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.list
 # Upstream comments retained below:
-DOMAIN-SUFFIX,ant.dev
-DOMAIN-SUFFIX,anthropic.team
-DOMAIN-SUFFIX,antspace.dev
-DOMAIN-SUFFIX,chatbotclaude.com
-DOMAIN-SUFFIX,claudeacademy.com
-DOMAIN-SUFFIX,claudepages.dev
 DOMAIN,http-intake.logs.us5.datadoghq.com
 DOMAIN,o1158394.ingest.us.sentry.io
 

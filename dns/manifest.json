@@ -1,11 +1,11 @@
 {
   "domestic_source": "rules/Domestic.list",
   "domestic_source_rules": 110247,
-  "domestic_dns_rules": 110203,
-  "domestic_dns_host_mappings": 219815,
-  "claude_dns_host_mappings": 81,
-  "foreign_overlap_rules": 969,
-  "foreign_dns_host_mappings": 1660,
+  "domestic_dns_rules": 110208,
+  "domestic_dns_host_mappings": 219825,
+  "claude_dns_host_mappings": 78,
+  "foreign_overlap_rules": 967,
+  "foreign_dns_host_mappings": 1666,
   "derivation_version": 2,
   "query_routes": {
     "domestic": "DIRECT",
@@ -13,10 +13,10 @@
     "claude": "client-residential"
   },
   "source_sha256": {
-    "Claude": "57b3007d303aa165812a3ec5ed28dc20f1d3df420a25c1092b224f40717a4407",
-    "Gemini": "607ada40ce04818a349b8f4b85e0642e2361f120b5a07d60d92b31b29cb95b7a",
-    "Grok": "ad5bc6e4666ce74a1ef0078508ee90d95145a124d6cc340b1b958957793dd368",
-    "OpenAI": "f635dafb9a11592615053239f4bbb69b49656829503d3b275dcd6722ed66484f",
+    "Claude": "16d8490250f4b37dddd3ca3ee43a69aa39ba6e4b3d7a56638d200ac5ea755cb7",
+    "Gemini": "349dac1d2d161b99446e47290deb93e398d87f02ea2fd641683195568122526e",
+    "Grok": "5d4008e00dc25cbe24628ad3c71ec542c5951cf04f5e20e95a8722232926c34d",
+    "OpenAI": "30cef3e8da15339e7a6f9e3e03a99d92d7252cf05f292d6395d40c25581a05e3",
     "Other-AI": "86e8ca033c24dd3f8a6236db1252879f4a58c730ae88f9af72359ccb3d858900",
     "Steam": "1f32c8e33f957ccdf27f7806e2d7ca6433880c95a99fa7b0aa6955bd0f5f3e4f",
     "Domestic": "6af73694ab031d2eb778c0ef2c8a043d104e64ce1f697ee7f1046afddfc6185f",
@@ -32,7 +32,7 @@
     "DNS-Bahamut": "5c6618ac00734921dae209bb812c1b61cc88523e158b856548153d1d3d8df2fd"
   },
   "output_sha256": {
-    "dns/Netconfig-DNS.lpx": "b7733fe132254e0e97f19bdef4da6653abbed921b9da94a784f160ad93d495db",
-    "rules/DNS-Proxy.list": "a89bccecae6274f28daecaabe8ebbe60665cc29039a803060e274217535a1e0c"
+    "dns/Netconfig-DNS.lpx": "93d46a3df6f221a629ce3eb6183bb6cc3378fa39270b40df9b2157363f70af97",
+    "rules/DNS-Proxy.list": "9ef6b90dc47ec912bc84836fd8e4e0d12c68afe3e094a9940984fd8b71f438e9"
   }
 }

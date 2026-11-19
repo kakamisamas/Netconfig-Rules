@@ -1,5 +1,5 @@
 # Netconfig-Rules: OpenAI
-# Exact union of complete upstream lists; unique rules: 54
+# Exact union of complete upstream lists; unique rules: 53
 # Domain, keyword, CIDR, IPv6 and ASN conditions are retained.
 
 # Upstream: https://raw.githubusercontent.com/HexTTX/Hex-Clash/main/Ai/OpenAI.list
@@ -7,18 +7,13 @@
 # NAME: OpenAI
 # AUTHOR: Hexon
 # REPO: https://github.com/HexTTX/Hex-Clash
-# UPDATED: 2026-10-04
-# DOMAIN: 16
-# DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 34
-# TOTAL: 54
-# 关键字匹配
+# UPDATED: 2026-11-19
+# DOMAIN: 17
+# DOMAIN-SUFFIX: 36
+# TOTAL: 53
 # 核心域名
 # 域名后缀
-# 官方 IP / ASN 兜底
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,codex
+DOMAIN,static.cloudflareinsights.com
 DOMAIN,openai-api.arkoselabs.com
 DOMAIN,ab.chatgpt.com
 DOMAIN,api-js.mixpanel.com
@@ -35,6 +30,7 @@ DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,s.gravatar.com
 DOMAIN,openai.auth0.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,chat.com
@@ -63,10 +59,10 @@ DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,revenuecat.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,searchgpt.com
 DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,webpubsub.azure.com
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,observeit.net
-IP-ASN,20473,no-resolve

@@ -110,6 +110,7 @@ DOMAIN,ssl.gstatic.com
 DOMAIN,st.dl.bscstorage.net
 DOMAIN,st.dl.eccdnx.com
 DOMAIN,st.dl.pinyuncloud.com
+DOMAIN,static.cloudflareinsights.com
 DOMAIN,steambroadcast.akamaized.net
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamcloudsweden.blob.core.windows.net
@@ -140,15 +141,9 @@ DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,avoddashs
-DOMAIN-KEYWORD,chatgpt
 DOMAIN-KEYWORD,claude
-DOMAIN-KEYWORD,codex
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
-DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,labs.google
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,netflixdnstest
@@ -157,8 +152,6 @@ DOMAIN-KEYWORD,notebooklm.google
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
-DOMAIN-KEYWORD,sentry
-DOMAIN-KEYWORD,sift
 DOMAIN-KEYWORD,speedtest
 DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,steambroadcast
@@ -188,6 +181,7 @@ DOMAIN-SUFFIX,aiv-delivery.net
 DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,ant.dev
 DOMAIN-SUFFIX,anthropic-cdn.com
+DOMAIN-SUFFIX,anthropic.ai
 DOMAIN-SUFFIX,anthropic.cloud
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,anthropic.team
@@ -267,6 +261,7 @@ DOMAIN-SUFFIX,coderabbit.ai
 DOMAIN-SUFFIX,coderabbit.gallery.vsassets.io
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,colab.google
 DOMAIN-SUFFIX,comfy.org
 DOMAIN-SUFFIX,comfyci.org
 DOMAIN-SUFFIX,comfyregistry.org
@@ -297,6 +292,7 @@ DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,deepwiki.com
 DOMAIN-SUFFIX,deepwiki.org
+DOMAIN-SUFFIX,developerprofiles.google.com
 DOMAIN-SUFFIX,devin.ai
 DOMAIN-SUFFIX,diabrowser.com
 DOMAIN-SUFFIX,diabrowser.engineering
@@ -460,6 +456,7 @@ DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,graph.org
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,grok.ai
 DOMAIN-SUFFIX,grok.app
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grok.x.com
@@ -653,6 +650,7 @@ DOMAIN-SUFFIX,revenuecat.com
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,searchgpt.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,shopdisney.com
